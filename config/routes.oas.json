@@ -55,6 +55,27 @@
         "operationId": "15bad9a4-7b6c-40cc-92b1-950e2cf5a29e",
         "x-internal": true
       }
+    },
+    "/adder": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "Greg's adder upperer",
+        "description": "",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "default",
+            "module": "$import(./modules/hello-world)",
+            "options": {}
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "aad8f7ef-30d3-4b5e-9fff-d33b23c14b79"
+      }
     }
   }
 }
